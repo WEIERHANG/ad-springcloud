@@ -1,0 +1,14 @@
+/Users/weh/IdeaWork_Code/ad_springcloud/imooc-ad-service/ad-common/src/main/java/com/imooc/ad/dump/table/AdCreativeTable.java
+/Users/weh/IdeaWork_Code/ad_springcloud/imooc-ad-service/ad-common/src/main/java/com/imooc/ad/advice/CommonResponseDataAdvice.java
+/Users/weh/IdeaWork_Code/ad_springcloud/imooc-ad-service/ad-common/src/main/java/com/imooc/ad/vo/CommonResponse.java
+/Users/weh/IdeaWork_Code/ad_springcloud/imooc-ad-service/ad-common/src/main/java/com/imooc/ad/dump/table/AdUnitKeywordTable.java
+/Users/weh/IdeaWork_Code/ad_springcloud/imooc-ad-service/ad-common/src/main/java/com/imooc/ad/dump/table/AdUnitTable.java
+/Users/weh/IdeaWork_Code/ad_springcloud/imooc-ad-service/ad-common/src/main/java/com/imooc/ad/dump/table/AdPlanTable.java
+/Users/weh/IdeaWork_Code/ad_springcloud/imooc-ad-service/ad-common/src/main/java/com/imooc/ad/dump/table/AdUnitItTable.java
+/Users/weh/IdeaWork_Code/ad_springcloud/imooc-ad-service/ad-common/src/main/java/com/imooc/ad/annotation/IgnoreResponseAdvice.java
+/Users/weh/IdeaWork_Code/ad_springcloud/imooc-ad-service/ad-common/src/main/java/com/imooc/ad/dump/DConstant.java
+/Users/weh/IdeaWork_Code/ad_springcloud/imooc-ad-service/ad-common/src/main/java/com/imooc/ad/advice/GlobalExceptionAdvice.java
+/Users/weh/IdeaWork_Code/ad_springcloud/imooc-ad-service/ad-common/src/main/java/com/imooc/ad/conf/WebConfiguration.java
+/Users/weh/IdeaWork_Code/ad_springcloud/imooc-ad-service/ad-common/src/main/java/com/imooc/ad/dump/table/AdCreativeUnitTable.java
+/Users/weh/IdeaWork_Code/ad_springcloud/imooc-ad-service/ad-common/src/main/java/com/imooc/ad/dump/table/AdUnitDistrictTable.java
+/Users/weh/IdeaWork_Code/ad_springcloud/imooc-ad-service/ad-common/src/main/java/com/imooc/ad/exception/AdException.java

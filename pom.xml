@@ -2,12 +2,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.wei</groupId>
     <artifactId>ad_springcloud</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
-<!--    引用 管理子项目-->
+
+    <!-- 引用管理子项目 -->
     <modules>
         <module>ad-eureka</module>
         <module>imooc-ad-service</module>
@@ -15,20 +17,21 @@
         <module>imooc-ad-service/ad-sponsor</module>
     </modules>
 
-
-
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.3.12.RELEASE</version>
+        <relativePath/>
     </parent>
 
     <properties>
-        <spring-cloud.version>Hoxton.SR12</spring-cloud.version> <!-- 更新为2020.x系列 -->
+        <spring-cloud.version>Hoxton.SR12</spring-cloud.version>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
+
     <dependencies>
+        <!-- Lombok  -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -36,18 +39,30 @@
             <scope>provided</scope>
         </dependency>
 
+        <!-- Spring Boot  -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
 
+        <!-- Spring Cloud Netflix Zuul for API Gateway -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
+        </dependency>
 
-
+        <!-- Logging dependencies: SLF4J and Logback -->
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.2.11</version>
+        </dependency>
     </dependencies>
 
     <dependencyManagement>
         <dependencies>
+            <!-- Spring Cloud dependencies management -->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
@@ -55,11 +70,27 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
+            <!-- SLF4J API with a stable version for logging -->
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>1.7.36</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 
     <repositories>
+        <!-- Spring Milestone Repository -->
         <repository>
             <id>spring-milestones</id>
             <name>Spring Milestones</name>
@@ -69,8 +100,5 @@
             </snapshots>
         </repository>
     </repositories>
-
-
-
 
 </project>
